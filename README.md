@@ -7,16 +7,16 @@ To run using the development server, run:
 ```
 docker-compose up
 ```
-Source code changes will be reflected at (localhost:3000)[http://localhost:3000] automatically.
+Source code changes will be reflected at [localhost:3000](http://localhost:3000) automatically.
 
-## Running in "Production"
+## Running Production Mode
 To run the production build with an nginx server locally, run:
 ```
 docker build .
->> Copy [image_id]
+>> Copy resulting [image_id]
 docker run -p 8080:80 [image_id]
 ```
-The app will be available at (localhost:8080)[http://localhost:8080].
+The app will be available at [localhost:8080](http://localhost:8080).
 
 ---
 
