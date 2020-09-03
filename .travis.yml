@@ -10,3 +10,15 @@ before_install:
 
 script:
   - docker run -e CI=true katyherrick/i-know-ci npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "i-know-ci"
+  env: "IKnowCi-env"
+  bucket_name: "elasticbeanstalk-us-east-2-763487184352"
+  bucket_path: "i-know-ci"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
