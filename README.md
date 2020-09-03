@@ -9,6 +9,9 @@ docker-compose up
 ```
 Source code changes will be reflected at [localhost:3000](http://localhost:3000) automatically.
 
+### Running Tests
+The tests will run in a separate container while running `docker-compose up`.
+
 ## Running Production Mode
 To run the production build with an nginx server locally, run:
 ```
