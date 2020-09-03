@@ -1,6 +1,6 @@
 # I Know CI
 
-A demonstration of Docker and Travis CI know-how.
+An example CI pipeline to deploy a React app running in a Docker container to AWS EBS using Travis CI.
 
 ## Running Locally
 To run using the development server, run:
