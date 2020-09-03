@@ -1,0 +1,12 @@
+language: generic
+
+# sudo required to use docker
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t katyherrick/i-know-ci -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true katyherrick/i-know-ci npm run test
